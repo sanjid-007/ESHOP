@@ -21,7 +21,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
-        b => b.MigrationsAssembly("EcommerceApp.API")));
+        b => b.MigrationsAssembly("EcommerceApp.Infrastructure")));
 
 
 builder.Services.AddCors(options =>

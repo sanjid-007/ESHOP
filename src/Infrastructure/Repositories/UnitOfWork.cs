@@ -1,6 +1,4 @@
-﻿
-
-using EcommerceApp.Application.Interfaces;
+﻿using EcommerceApp.Application.Interfaces;
 using EcommerceApp.Domain.Entities;
 using EcommerceApp.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -15,7 +13,7 @@ namespace EcommerceApp.Infrastructure.Repositories
         public IRepository<Category> Categories { get; private set; }
         public IRepository<User> Users { get; private set; }
         public IRepository<Order> Orders { get; private set; }
-        public IRepository<OrderItem> OrderItems { get; private set; }
+        public IRepository<OrderItem> OrderItems { get; private set; } 
         public IRepository<Cart> Carts { get; private set; }
         public IRepository<CartItem> CartItems { get; private set; }
         public IRepository<Address> Addresses { get; private set; }
